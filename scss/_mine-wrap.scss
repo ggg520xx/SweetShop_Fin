@@ -1,0 +1,77 @@
+// 以前習慣 避免各頁有特殊頁面排版需求或差異 用wrap做包裹調整
+
+// 寫給自己看的
+// max-heigh 100vh  和 max-width 100vw 相當難控制 且沒用的寫法
+// 寫100% 還可以靠已有框去限制 , 而vh vw 幾乎是超出視窗及框架控制
+
+// 只可寫heigh 100vh及width 100vw  且一個板頁面中只使用一次
+// 只能寫一次在wrap(用於body下 我用來包裹全部元素的最外層)
+// 除了wrap外 任何地方皆不可寫vh 及 vw
+
+// wrap 在此scss控制,,  其餘位置 scss 看到 vh 及 vw 皆替換成 %
+
+
+.index_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+
+  // border: 1px solid red;
+}
+
+.dessert_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+}
+
+.login_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+}
+
+.cart_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+}
+
+.delivery_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+}
+
+.payment_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+}
+.receipt_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+}
+
+.finish_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 30px;
+}

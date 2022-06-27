@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/css/all.css" />
+  </head>
+
+  <body>
+    <div class="login_wrap">
+      <div class="container">
+             <!-- ----------------------------- -->
+        <input type="checkbox" name="" id="menu_control" />
+        <!-- label可以控制input的checkbox -->
+
+        <div class="header">
+          <div>
+            <img class="logo" src="images/index/logo-all-dark.svg" alt="" />
+          </div>
+
+          <!-- 用input和label兩個做選單觸發，當我們點選到label選單時，可以觸發label的checkbox，兩者之間就是靠 id="menu_control"來連接 -->
+          <!-- 漢堡的選單 -->
+          <label for="menu_control" class="menu_btn">
+            <span>選單這三槓槓</span>
+          </label>
+          <!-- ------------------------- -->
+          <!-- ------------------------- -->
+
+          <div class="menu">
+            <ul class="link">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="dessert.html">甜點</a></li>
+              <li><a href="login.html">登入</a></li>
+            </ul>
+            <ul>
+              <li class="shop_push_up">
+                <a href="cart.html"
+                  ><img
+                    class="shop-cart"
+                    src="images/index/shopcart.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="login_interface">
+          <div class="member_login">
+            <h2>會員登入</h2>
+
+            <div class="type_zone">
+              <div class="user_zone">
+                <div>
+                  <img
+                    class="footer_topimg"
+                    src="images/login/person_black_24dp.svg"
+                    alt=""
+                  />
+                </div>
+
+                <input
+                  class="basic-slide"
+                  id="email"
+                  type="text"
+                  placeholder="電子信箱/手機號碼"
+                /><label for="email"></label>
+              </div>
+
+              <div class="user_zone">
+                <div>
+                  <img
+                    class="footer_topimg"
+                    src="images/login/vpn_key_black_24dp.svg"
+                    alt=""
+                  />
+                </div>
+
+                <input
+                  class="basic-slide"
+                  id="email"
+                  type="text"
+                  placeholder="請輸入使用者密碼"
+                /><label for="email"></label>
+              </div>
+
+              <p><input class="rember" type="checkbox" /> 記住我</p>
+            </div>
+
+            <div class="user_login">
+              <a href="">登入帳號</a>
+            </div>
+          </div>
+
+          <div class="media_link">
+            <h3>—— 連結社群帳號 ——</h3>
+
+            <div class="button_zone">
+              <div class="user_zone">
+                <div>
+                  <a href="#">
+                    <img src="images/media/ic-facebook-logotype.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="user_zone">
+                <div>
+                  <a href="#">
+                    <img src="images/media\/ic-google.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="user_zone">
+                <div>
+                  <a href="#">
+                    <img src="images/media/ic-yahoo.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="top_bg">
+          <div class="container">
+            <div class="top_side">
+              <div class="top_leftzone">
+                <div>
+                  <img
+                    class="footer_topimg"
+                    src="images/footer/logo-light.svg"
+                    alt=""
+                  />
+                </div>
+                <p>訂閱你我的甜蜜郵件</p>
+              </div>
+
+              <div class="top_rightzone">
+                <div>
+                  <img
+                    class="footer_topimg"
+                    src="images/footer/mail-24px.png"
+                    alt=""
+                  />
+                </div>
+
+                <input
+                  class="basic-slide"
+                  id="email"
+                  type="text"
+                  placeholder="Your favorite email"
+                /><label for="email"></label>
+
+                <!-- <input class="submit_btn" type="submit" value="" /> -->
+                <button class="submit_btn">
+                  <img
+                    class="footer_topimg"
+                    src="images/footer/arrow_forward-24px.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_side">
+          <div class="container">
+            <div class="up">
+              <div class="up_img">
+                <img src="images/footer/logotype-sm-dark.svg" alt="" />
+                <p class="up_text">
+                  07-1234-5678<br />sweetaste@email.com<br />800
+                  高雄市新興區幸福路 520 號
+                </p>
+              </div>
+
+              <div class="down_img">
+                <img src="images/footer/text-sm.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="down">
+              <div>
+                <img src="images/footer/ic-line@.svg" alt="" />
+                <img src="images/footer/ic-facebook.svg" alt="" />
+              </div>
+              <div>© 2018 Sweetaste* All Rights Reserved</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

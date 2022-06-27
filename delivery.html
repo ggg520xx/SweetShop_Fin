@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/css/all.css" />
+  </head>
+  <body>
+    <div class="delivery_wrap">
+      <div class="container">
+             <!-- ----------------------------- -->
+        <input type="checkbox" name="" id="menu_control" />
+        <!-- label可以控制input的checkbox -->
+
+        <div class="header">
+          <div>
+            <img class="logo" src="images/index/logo-all-dark.svg" alt="" />
+          </div>
+
+          <!-- 用input和label兩個做選單觸發，當我們點選到label選單時，可以觸發label的checkbox，兩者之間就是靠 id="menu_control"來連接 -->
+          <!-- 漢堡的選單 -->
+          <label for="menu_control" class="menu_btn">
+            <span>選單這三槓槓</span>
+          </label>
+          <!-- ------------------------- -->
+          <!-- ------------------------- -->
+
+          <div class="menu">
+            <ul class="link">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="dessert.html">甜點</a></li>
+              <li><a href="login.html">登入</a></li>
+            </ul>
+            <ul>
+              <li class="shop_push_up">
+                <a href="cart.html"
+                  ><img
+                    class="shop-cart"
+                    src="images/index/shopcart.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="delivery_interface">
+          <div class="left_delivery">
+            <div class="delivery_info_list">
+              <div class="list_zone">
+                <div class="title">
+                  <p>運送</p>
+                  <img src="images/delivery/bar_delivery.svg" alt="" />
+                </div>
+
+                <div class="order_name">
+                  <div>
+                    <p>姓氏</p>
+                    <!-- <input type="text" /> -->
+                    <input
+                      class="basic-slide"
+                      id="email"
+                      type="text"
+                      placeholder="電子信箱/手機號碼"
+                    /><label for="email"></label>
+                  </div>
+
+                  <div>
+                    <p>名字</p>
+
+                    <!-- <input type="text" /> -->
+                    <input
+                      class="basic-slide"
+                      id="email"
+                      type="text"
+                      placeholder="電子信箱/手機號碼"
+                    /><label for="email"></label>
+                  </div>
+                </div>
+
+                <div class="order_phone">
+                  <div>
+                    <p>電話</p>
+                    <!-- <input type="text" /> -->
+                    <input
+                      class="basic-slide"
+                      id="email"
+                      type="text"
+                      placeholder="電子信箱/手機號碼"
+                    /><label for="email"></label>
+                  </div>
+                </div>
+
+                <div class="order_add">
+                  <div>
+                    <p>地址</p>
+                    <select class="basic-slide">
+                      <option selected disable hidden>縣市/居住城市</option>
+                      <option>台北</option>
+                      <option>新北</option>
+                      <option>台中</option>
+                      <option>彰化</option>
+                      <option>台南</option>
+                      <option>高雄</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <p>&nbsp;</p>
+                    <!-- 沒有東西下框會上移 調改位置排版項目太麻煩了 直接&nbsp;解決啦 -->
+
+                    <!-- 依據所選 展示對應區  太多了做不完-->
+                    <select class="basic-slide">
+                      <option selected disable hidden>區域選擇</option>
+                      <option>新興區</option>
+                      <option>苓雅區</option>
+                      <option>前鎮區</option>
+                      <option>三民區</option>
+                      <option>前金區</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="order_add2">
+                  <div>
+                    <input
+                      class="basic-slide"
+                      id="email"
+                      type="text"
+                      placeholder="電子信箱/手機號碼"
+                    /><label for="email"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="next_step"><a href="payment.html">下一步</a></div>
+          </div>
+
+          <div class="right_detail">
+            <div class="order_item">
+              <div class="order_title">
+                <h2>訂單摘要</h2>
+              </div>
+              <!-- <hr
+                color="#EAF0ED"
+                width="80%"
+                size="1px
+              "
+              /> -->
+
+              <div class="price_calc_zone">
+                <div class="plus_price">
+                  <p><span>小計</span><span>NT$ 2,700</span></p>
+                  <p><span>運費</span><span>NT$ 300</span></p>
+                </div>
+
+                <div class="total_price">
+                  <p>總計</p>
+                  <p>NT$ 3,000</p>
+                </div>
+              </div>
+
+              <!-- <div class="checkout"><a href="delivery.html">結帳</a></div> -->
+            </div>
+
+            <div class="shop_list">
+              <div class="order_title">
+                <h2>訂單摘要</h2>
+              </div>
+              <!-- <hr
+                color="#EAF0ED"
+                width="80%"
+                size="1px
+              "
+              /> -->
+
+              <!-- -------------------------------- -->
+              <!-- 某側有可增減物體  另一側下高度100%要小心 
+                會因為另外一側增加物體 而拉長另側高度 導致排版走位  要小心-->
+
+              <div class="price_calc_zone">
+                <div class="sm_shop_list">
+                  <img src="images/delivery/p-8.jpg" alt="" />
+                  <p><span>焦糖馬卡龍（2）</span><span>NT$ 450</span></p>
+                </div>
+                <div class="sm_shop_list">
+                  <img src="images/delivery/p-5.png" alt="" />
+                  <p><span>焦糖馬卡龍（2）</span><span>NT$ 450</span></p>
+                </div>
+                <div class="sm_shop_list">
+                  <img src="images/delivery/p-3.png" alt="" />
+                  <p><span>焦糖馬卡龍（2）</span><span>NT$ 450</span></p>
+                </div>
+                <!-- <div class="sm_shop_list">
+                  <img src="" alt="" />
+                  <p><span>焦糖馬卡龍（2）</span><span>NT$ 450</span></p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="top_bg">
+          <div class="container">
+            <div class="top_side">
+              <div class="top_leftzone">
+                <div>
+                  <img
+                    class="footer_topimg"
+                    src="images/footer/logo-light.svg"
+                    alt=""
+                  />
+                </div>
+                <p>訂閱你我的甜蜜郵件</p>
+              </div>
+
+              <div class="top_rightzone">
+                <div>
+                  <img
+                    class="footer_topimg"
+                    src="images/footer/mail-24px.png"
+                    alt=""
+                  />
+                </div>
+
+                <input
+                  class="basic-slide"
+                  id="email"
+                  type="text"
+                  placeholder="Your favorite email"
+                /><label for="email"></label>
+
+                <!-- <input class="submit_btn" type="submit" value="" /> -->
+                <button class="submit_btn">
+                  <img
+                    class="footer_topimg"
+                    src="images/footer/arrow_forward-24px.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_side">
+          <div class="container">
+            <div class="up">
+              <div class="up_img">
+                <img src="images/footer/logotype-sm-dark.svg" alt="" />
+                <p class="up_text">
+                  07-1234-5678<br />sweetaste@email.com<br />800
+                  高雄市新興區幸福路 520 號
+                </p>
+              </div>
+
+              <div class="down_img">
+                <img src="images/footer/text-sm.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="down">
+              <div>
+                <img src="images/footer/ic-line@.svg" alt="" />
+                <img src="images/footer/ic-facebook.svg" alt="" />
+              </div>
+              <div>© 2018 Sweetaste* All Rights Reserved</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
